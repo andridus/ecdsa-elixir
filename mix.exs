@@ -9,7 +9,7 @@ defmodule Ellipticcurve.MixProject do
       homepage_url: "https://starkbank.com",
       source_url: "https://github.com/starkbank/ecdsa-elixir",
       description: description(),
-      elixir: "~> 1.9",
+      elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package()
@@ -37,7 +37,7 @@ defmodule Ellipticcurve.MixProject do
 
   defp deps do
     [
-      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
+      # {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 end

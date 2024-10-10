@@ -242,7 +242,7 @@ defmodule EllipticCurve.Math do
     end
   end
 
-  defp jacobianMultiply(p, _n, _cN, _cA, _cP) when p.y == 0 do
+  defp jacobianMultiply(%{y: y}, _n, _cN, _cA, _cP) when y == 0 do
     %Point{x: 0, y: 0, z: 1}
   end
 
